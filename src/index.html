@@ -4,17 +4,31 @@
     <meta charset="UTF-8"/>
     <link rel="icon" href="/favicon.ico"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>webstart template (vite5 + tailwind3 + scss + ejs)</title>
+    <title>coffee maps</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.17.11/dist/css/uikit.min.css" />
     <link rel="stylesheet" href="scss/main.scss">
 </head>
 <body>
-    <h1 class="text-3xl font-bold underline text">
-        Hello world!
-      </h1>
-      <a href="index2.html">fff</a>
-    <%for(var i=0;i<3;i++){%>
-      <%-include("include/partial")%>
-    <%}%>
-    
+<div class="bg-[#FFFAF5]">
+    <div class="mx-auto max-w-fullr">
+        <div class="text-center">
+            <h2 class="py-10 text-[25px] lg:text-[60px] text-[#9A3412] font-bold">精選店家</h2>
+            <h2 class="py-10 text-[20px] lg:text-[50px] text-[#9A3412] font-medium">COLLECTIONS</h2>
+        </div>
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-20 justify-items-center">
+        <%for(var i=0;i<3;i++){%>
+            <div class="card" class="flex flex-col">
+                <div><img src="" alt=""></div>
+                <p>共生咖啡廳</p>
+                
+            </div>
+            <div class="card" class="flex flex-col"></div>
+            <div class="card" class="flex flex-col"></div>
+        <%}%>
+        </div>
+    </div>
+</div>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.17.11/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.17.11/dist/js/uikit-icons.min.js"></script>
 </body>
 </html>
