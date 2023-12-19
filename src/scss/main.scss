@@ -15,6 +15,7 @@
     flex: content;
     flex-direction: column;
     align-items: center;
+    position: relative;
 }
 .card_text{
     color: #000;
@@ -31,14 +32,51 @@
     margin-right: 25px;
 }
 
+#arrow_move:hover div{
+    margin-right: 0;
+    transition: 0.5s;
+}
+    
+
+
+
+
 .location{
-    color: #000;
+    color: #fff;
     text-align: center;
     font-size: 35px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
     position: absolute;
-    top: 1813px;
-    left: 82px;
+    z-index: 1;
+    top: 20px;
+    right: 35px;
+}
+
+.store_btn{
+    display: block;
+
+    background-color: #9A3412;
+    width: 500px;
+    height: 100px;
+    border-radius: 50px;
+    color: #fff;
+    font-size: 38px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+#store_play:hover{
+    background-color: #fff;
+    
+    .img{
+        margin-right: 0;
+        transition: 0.5s;
+    }
+    .p{
+        color:#9A3412;
+    }
+
 }

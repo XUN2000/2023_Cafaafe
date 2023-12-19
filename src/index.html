@@ -10,39 +10,87 @@
 </head>
 <body>
 <div class="bg-[#FFFAF5]">
-    <div class="mx-auto max-w-fullr">
+    <div class="mx-auto max-w-full">
         <div class="text-center">
             <h2 class="py-10 text-[25px] lg:text-[60px] text-[#9A3412] font-bold">精選店家</h2>
             <h2 class="py-10 text-[20px] lg:text-[50px] text-[#9A3412] font-medium">COLLECTIONS</h2>
         </div>
-        <div class="grid grid-cols-1 lg:grid-cols-3 gap-20 justify-items-center">
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-x-[30px] gap-y-[35px] justify-items-center">
         <%for(var i=0;i<3;i++){%>
             <div class="card">
 
-                <div class=" w-full gap-5 p-5">
-                    <img class="w-full h-[250px] rounded-[25px]" src="img/共生咖啡廳.JPG" alt="">
-                <div class="mt-[27px]"><p class="card_text">共生咖啡廳</p></div>
+                <div class="max-w-[480px] max-h-[450px] overflow-hidden mb-[20px]">
+                    <a href="#"><img class=" mx-auto mt-[27px] w-[425px] h-[250px] rounded-[25px]  hover:scale-110  cursor-pointer duration-500 ease-in-out" src="img/共生咖啡廳.JPG" alt=""></a>
+                <div class="mt-[27px] ml-[30px]"><p class="card_text">共生咖啡廳</p></div>
                 </div>
 
-                <div class="flex flex-row justify-between mb-[39px]">
+                <div class="flex flex-row justify-between mb-[40px]">
                     <div class="flex flex-row ml-[30px]">
                         <p class="information ">4.8</p>
                         <img class="w-10 h-10" src="img/ICON_淺色咖啡豆.png" alt="">
                     </div>
-                    <div class="flex flex-row justify-center items-center ">
-                        <img class="w-5 h-3 mr-[20px]" src="img/ICON.png" alt="">
+                    <div id="arrow_move" class="flex flex-row justify-center items-center cursor-pointer">
+                        <div class="mr-[30px] w-[19px] h-[14px]"><img class="w-auto" src="img/ICON.png" alt=""></div>
                         <p class="information">店家資訊</p>
                     </div>
                 </div>
-                <div>
+                <div class="absolute top-[-30px] right-[-25px]">
                     <p class="location">高雄市</p>
                     <img class="w-[180px] h-[85px] relative" src="img/ICON_縣市底圖.png" alt="">
                 </div>
             </div>
-            <div class="card" class="flex flex-col"></div>
-            <div class="card" class="flex flex-col"></div>
+            <div class="card">
+                <div class="max-w-[480px] max-h-[450px] overflow-hidden mb-[20px]">
+                    <a href="#"><img class=" mx-auto mt-[27px] w-[425px] h-[250px] rounded-[25px]  hover:scale-110  cursor-pointer duration-500 ease-in-out" src="img/共生咖啡廳.JPG" alt=""></a>
+                <div class="mt-[27px] ml-[30px]"><p class="card_text">共生咖啡廳</p></div>
+                </div>
+
+                <div class="flex flex-row justify-between mb-[40px]">
+                    <div class="flex flex-row ml-[30px]">
+                        <p class="information ">4.8</p>
+                        <img class="w-10 h-10" src="img/ICON_淺色咖啡豆.png" alt="">
+                    </div>
+                    <div id="arrow_move" class="flex flex-row justify-center items-center cursor-pointer">
+                        <div class="mr-[30px] w-[19px] h-[14px]"><img class="w-auto" src="img/ICON.png" alt=""></div>
+                        <p class="information">店家資訊</p>
+                    </div>
+                </div>
+                <div class="absolute top-[-30px] right-[-25px]">
+                    <p class="location">高雄市</p>
+                    <img class="w-[180px] h-[85px] relative" src="img/ICON_縣市底圖.png" alt="">
+                </div>
+            </div>
+            <div class="card">
+                <div class="max-w-[480px] max-h-[450px] overflow-hidden mb-[20px]">
+                    <a href="#"><img class=" mx-auto mt-[27px] w-[425px] h-[250px] rounded-[25px]  hover:scale-110  cursor-pointer duration-500 ease-in-out" src="img/共生咖啡廳.JPG" alt=""></a>
+                <div class="mt-[27px] ml-[30px]"><p class="card_text">共生咖啡廳</p></div>
+                </div>
+
+                <div class="flex flex-row justify-between mb-[40px]">
+                    <div class="flex flex-row ml-[30px]">
+                        <p class="information ">4.8</p>
+                        <img class="w-10 h-10" src="img/ICON_淺色咖啡豆.png" alt="">
+                    </div>
+                    <div id="arrow_move" class="flex flex-row justify-center items-center cursor-pointer">
+                        <div class="mr-[30px] w-[19px] h-[14px]"><img class="w-auto" src="img/ICON.png" alt=""></div>
+                        <p class="information">店家資訊</p>
+                    </div>
+                </div>
+                <div class="absolute top-[-30px] right-[-25px]">
+                    <p class="location">高雄市</p>
+                    <img class="w-[180px] h-[85px] relative" src="img/ICON_縣市底圖.png" alt="">
+                </div>
+            </div>
         <%}%>
         </div>
+    </div>
+    <div class="flex justify-center h-[100px] mt-[70px]">
+        <button class="store_btn">
+            <div id="store_play" class="flex flex-row items-center justify-center">
+                <img class="w-[28px] h-[28px] mr-[30px]" src="img/ICON__contactarrow_l.png" alt="">
+                <p>精選店家一覽</p>
+            </div>
+        </button>
     </div>
 </div>
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.17.11/dist/js/uikit.min.js"></script>
